@@ -1,0 +1,224 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Georgia:ital,wght@0,400;1,400&display=swap');
+
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D6E5EA; /* Lighter shade of the menu color */
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #97BAC5;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.section-content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+
+.section-content h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 4em; /* Increased font size */
+    color: #97BAC5;
+    margin-bottom: 20px;
+}
+.section-content .bigspan {
+    font-family: 'Cinzel', serif;
+    font-size: 2em; /* Increased font size */
+    color: #97BAC5;
+}
+
+.section-content p {
+    font-size: 24px; /* Increased font size */
+    line-height: 1.8; /* Increased line height */
+    color: #6c757d;
+}
+
+.section-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-image img {
+    border-radius: 50%; /* Rounded corners */
+    width: 100%; /* Increased width */
+    max-width: 600px; /* Increased max width */
+}
+
+.landing-section {
+    background: url('../images/banner.png') no-repeat center center;
+    background-size: cover;
+    color: white;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.landing-section h1,
+.landing-section h2 {
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.footer {
+    background-color: #97BAC5;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.donation-methods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.donation-method {
+    flex: 1 1 20%; /* Four columns */
+    max-width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+
+.donation-method img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.donation-method {
+    flex: 1 1 20%; /* Four columns */
+    max-width: 20%;
+    text-align: center;
+    margin: 10px;
+}
+
+.donation-method img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.donation-method i {
+    margin-bottom: 10px;
+}
+
+.donation-method {
+    flex: 1 1 20%; /* Four columns */
+    max-width: 20%;
+    text-align: center;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-method i {
+    margin-bottom: 10px;
+    color: #97BAC5; /* Icon color */
+    font-size: 4em; /* Increased icon size */
+}
+
+.donation-method h3 {
+    margin-top: 10px;
+    font-size: 1.5em;
+    color: #97BAC5;
+}
+
+.donation-method p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+
+    .section-image {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    .section-content {
+        padding: 20px 0;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .section-content h2 {
+        font-size: 2.5em; /* Adjusted font size */
+    }
+
+    .section-content p {
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    .donation-methods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donation-method {
+        max-width: 100%;
+    }
+}

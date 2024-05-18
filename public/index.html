@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archangel Raphael Ministry Center</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#plans">Plans</a>
+    <a href="#location">Location</a>
+    <a href="#donate">Donate</a>
+    <a href="#contact">Contact Us</a>
+</div>
+
+<section id="home" class="landing-section">
+</section>
+
+<section id="about" class="section">
+   
+    <div class="section-content">
+        <p>It is with God’s Grace and Blessing that we introduce the first group home of the SUS Diocese designed for our special angels. Our mission is to provide a loving and supportive environment where our angels can thrive and live fulfilling lives.</p>
+        <p>At the <span class="bigspan">"ARM"</span> Archangel Raphael Ministry Center, we believe that every individual deserves to be treated with dignity, respect, and compassion. Our goal is to create a community where our special angels feel valued, loved, and empowered to reach their full potential. We are committed to providing personalized care, tailored to meet the unique needs of each resident, ensuring they receive the support and encouragement they need to flourish.</p>
+        <p>Our dedicated team of caregivers, volunteers, and staff work tirelessly to create a warm and nurturing atmosphere. We offer a variety of programs and activities designed to enrich the lives of our residents, including spiritual services, recreational activities, educational opportunities, and social events. By fostering a sense of belonging and community, we aim to enhance the overall well-being of our angels, helping them to lead joyful and meaningful lives.</p>
+        <p>We invite you to join us in our mission to support and uplift our special angels. Whether through volunteering, donations, or simply spreading the word, your involvement makes a difference. Together, we can create a brighter future for our community and the extraordinary individuals we serve.</p>
+    </div>
+</section>
+
+<section id="plans" class="section reverse">
+    <div class="section-content">
+        <h2>Plans Are In The Works!</h2>
+        <p>We have the land to build the home and ministry center for our special needs angels who are able to care for themselves independently, but require supervision and some assistance.</p>
+        <p>The purpose of the home and ministry center is to not only provide a safe and loving home for our angels, but to also create a spiritual center for spiritual enjoyment full of worship, fellowship, activities, trips, and fun. We are committed to creating a nurturing and enriching environment for all who come through our doors.</p>
+    </div>
+    <div class="section-image">
+        <img src="images/plans.png" alt="Plans">
+    </div>
+</section>
+
+<section id="location" class="section">
+    <div class="section-image">
+        <img src="images/location.png" alt="Location">
+    </div>
+    <div class="section-content">
+        <h2>Our Location</h2>
+        <p>We are located in the heart of Fort Myers, FL, offering easy access to a variety of community resources and amenities. Our location is thoughtfully chosen to ensure convenience for our residents and their families.</p>
+        <!-- Google Maps Integration -->
+        <div id="map" style="height: 400px; width: 100%; border-radius: 10px;"></div>
+        <script>
+            function initMap() {
+                var location = {lat: 26.6406, lng: -81.8723}; // Replace with the actual coordinates
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 12,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+                });
+            }
+        </script>
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfhaC2p7XSsuekiPiu_qLBE5AIx0y7IKk&callback=initMap"></script>
+    </div>
+</section>
+
+<section id="donate" class="section reverse">
+    <div class="section-content">
+        <h2>Ways to Donate</h2>
+        <p>Your generous donations help us provide exceptional care and services to our special angels. There are several ways you can contribute:</p>
+        <div class="donation-methods">
+            <div class="donation-method">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Zelle</h3>
+                <p>Use the Zelle app to send your donation</p>
+                <img src="images/zelle.png" alt="Zelle QR Code">
+            </div>
+            <div class="donation-method">
+                <i class="fas fa-university"></i>
+                <h3>ACH Transfer</h3>
+                <p>Routing Number: <b>063100277</b></p>
+                <p>Account Number: <b>8981 5029 7263</b></p>
+            </div>
+            <div class="donation-method">
+                <i class="fas fa-envelope"></i>
+                <h3>Check</h3>
+                <p>Archangel Raphael Ministry Center</p>
+                <p>19800 Allaire Ln, Fort Myers, FL 33908</p>
+            </div>
+            <div class="donation-method">
+                <i class="fab fa-paypal"></i>
+                <h3>PayPal</h3>
+                <p>Use the PayPal app to send your donation</p>
+                <img src="images/paypal.png" alt="PayPal QR Code">
+            </div>
+        </div>
+    </div>
+  
+</section>
+
+<section id="contact" class="section">
+    <div class="section-image">
+        <img src="images/contactus.png" alt="Contact Us">
+    </div>
+    <div class="section-content">
+        <h2>Contact Us</h2>
+        <p>For further details about the ARM Center or to get involved, please contact:</p>
+        <p><b>Fr. Joachim Boutros</b></p>
+        <p>Phone: 239.273.5029</p>
+        <p>Email: Father_Joachim@yahoo.com</p>
+        <p>We look forward to hearing from you and welcoming you into our community.</p>
+    </div>
+</section>
+
+<div class="footer">
+    <p>&copy; 2024 Archangel Raphael Ministry Center. All rights reserved.</p>
+</div>
+
+</body>
+</html>
